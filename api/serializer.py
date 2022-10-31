@@ -163,7 +163,7 @@ class MemberRegistrationViewSet(viewsets.ReadOnlyModelViewSet):
     filterset_fields = MEMBER_REGISTRATION_FIELDS[:-10]
 
 
-class WorkshopRegistrationSerializer(serializers.HyperlinkedModelSerializer):
+class WorkshopRegistrationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Attendees
         fields = WORKSHOP_REGISTRATION_FIELDS
